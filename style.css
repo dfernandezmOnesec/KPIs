@@ -364,7 +364,7 @@ section#features {
 }
 .about-section p {
   text-align: justify;
-  padding-inline: 1rem;
+  padding-inline: 0.2 rem;
 }
 
 .about-section p {
@@ -621,7 +621,7 @@ footer {
     z-index: 1;
     position: relative;
     border-radius: 0.5rem;
-    border: 2px solid rgb(255 255 255 / 15%);
+    border: 2px solid rgba(39, 184, 71, 0.15);
   }
   .image-section img {
     border-radius: .5rem;
