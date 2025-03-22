@@ -1,113 +1,207 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script>document.getElementsByTagName("html")[0].className += " js";</script>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <title>KPIs Timeline</title>
-</head>
-<body>
-  <header class="cd-main-header text-center flex flex-column flex-center">
-    <h1>KPIs Timeline</h1>
-    <p class="margin-top-sm">Resumen de logros en Desarrollo, IA y Consultoría</p>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="https://images.pexels.com/photos/35196/water-plant-green-fine-layers.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <title>Onesec</title>
+    <!-- font awesome script -->
+    <script
+      defer
+      src="https://kit.fontawesome.com/9f47c55281.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- google fonts -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap");
+    </style>
+  </head>
+  <body class="relative">
+    <!-- header section -->
+    <header>
+      <div class="container header-section">
+        <div aria-details="logo" class="logo">
+          <a href="#">ONESEC</a>
+        </div>
+        <div class="menu" id="menu">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+        <nav>
+          <!-- nav-Links -->
+          <ul class="nav-links">
+            <li class="active">
+              <a href="#home">Inicio</a>
+            </li>
+            <li style="--d: 0.2s">
+              <a href="#features">Proyectos</a>
+            </li>
+            <li style="--d: 0.3s">
+              <a href="#about">Logros</a>
+            </li>
+          </ul>
 
-  <section class="cd-timeline js-cd-timeline">
-    <div class="container max-width-lg cd-timeline__container">
-      
-      <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--picture">
-          <img src="assets/img/cd-icon-picture.svg" alt="Playbooks">
+        </nav>
+      </div>
+    </header>
+    <!-- Hero section -->
+    <section id="home">
+      <div class="container hero-section">
+        <div class="hero-contents">
+          <h1 class="hero-text">Dev Projects</h1>
+          <p class="hero-subText">Diana Fernández Madrigal </p>
+          <a href="#features" class="cta button">
+            Explorar
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
         </div>
-        <div class="cd-timeline__content text-component">
-          <h2>Playbooks en Sentinel Implementados</h2>
-          <p class="color-contrast-medium">Meta: 1 cada 2 meses (5-6 en 11 meses)<br>
-          Logro: 17 playbooks implementados con clientes (Nadro, IMSS, Tiendas 3B y otros)<br>
-          Resultado: Superado por más de 3 veces la meta</p>
-          <span class="cd-timeline__date">Enero - Noviembre</span>
+        <article class="hero-image-container">
+          <img
+            src="https://onesec.mx/wp-content/uploads/2023/07/banner-1920x600-1.gif"
+            alt="green plants"
+            loading="lazy"
+            width="100"
+            height="100"
+          />
+        </article>
+        <div class="social-links">
+          <a href="https://github.com/dfernandezmOnesec"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="www.linkedin.com/in/diana-fernández-631827243"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Features section -->
+    <section id="features" class="relative">
+      <div class="strip-line horizontal"></div>
+      <div class="strip-line horizontal"></div>
+      <div class="strip-line horizontal"></div>
+      <div class="strip-line horizontal"></div>
+
+      <div class="container features-section relative">
+        <h2 class="features_heading w-full">Resumen de logros en Desarrollo, IA y Consultoría</h2>
+
+        <div class="features flex-group relative">
+          <div class="strip-line vertical"></div>
+
+          <!-- left feature -->
+          <div class="feature feature-one flex-group">
+            <div class="circle absolute"></div>
+            <div class="image-section">
+              <img
+                src="https://th.bing.com/th/id/OIP.BIdYJpmsDzkXrQD-QrlluQHaD4?rs=1&pid=ImgDetMain"
+                alt="Flowers"
+                width="100"
+                height="100"
+                loading="lazy"
+              />
+            </div>
+            <article class="text-section">
+              <h3 class="title">
+                <span>Playbooks</span>
+              </h3>
+              <p class="description">
+                Meta: 4 cada 2 meses (5-6 en 11 meses)
+Logro: 17 playbooks implementados con clientes (Nadro, IMSS, Tiendas 3B y otros)
+Resultado: Superado por más de 3 veces la meta &#128512;
+              </p>
+              <a href="https://github.com/dfernandezmOnesec/Logic-Apps-catalog.git" class="button more-btn">Ver</a>
+            </article>
+          </div>
+          <!-- right feature -->
+          <div class="feature feature-two flex-group">
+            <div class="circle absolute"></div>
+            <article class="text-section">
+              <h3 class="title">
+                <span>Agentes de Copilot</span>
+              </h3>
+              <p class="description">
+                Meta: 1 cada 3 meses (4 en 11 meses)
+                Logro: 4 agentes desarrollados, 2 de ellos implementados
+              
+              </p>
+              <a href="https://onesecmx.sharepoint.com/:v:/s/Planpersonal/EbyrJxZX_ohErs0ElBP2mnIBnD-DO_1yuvxZ0uCADzK6qQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=jTjjUE" class="button more-btn">Ver</a>
+            </article>
+            <div class="image-section">
+              <img
+                src="https://th.bing.com/th/id/OIP._0cgleqtgMg4bwrdghbLcgHaHa?rs=1&pid=ImgDetMain"
+                alt="Snow"
+                width="100"
+                height="100"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <!-- left feature -->
+          <div class="feature feature-three flex-group">
+            <!-- small circle-->
+            <div class="circle absolute"></div>
+            <div class="image-section">
+              <img
+                src="https://img.icons8.com/fluency/452/microsoft-power-automate-2020.png"
+                alt="Natural Umbrella"
+                width="100"
+                height="100"
+                loading="lazy"
+              />
+            </div>
+            <article class="text-section">
+              <h3 class="title">
+                <span>Automatizaciones de Power Automate</span>
+              </h3>
+              <p class="description">
+                Meta: 1 cada 2 meses (5 en 11 meses)
+Logro: 7 flujos finalizados
+
+              </p>
+              <a href="https://onesecmx.sharepoint.com/:f:/s/Planpersonal/EkMPDJ6OALVDs9L_wVcDE8QB7LgBFdUtNb_BtMwT25nfaQ?e=Zc9hGh" class="button more-btn">Ver</a>
+            </article>
+          </div>
         </div>
       </div>
       
-      <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--movie">
-          <img src="assets/img/cd-icon-movie.svg" alt="Copilot">
-        </div>
-        <div class="cd-timeline__content text-component">
-          <h2>Agentes en Copilot Desarrollados</h2>
-          <p class="color-contrast-medium">Meta: 1 cada 3 meses (4 en 11 meses)<br>
-          Logro: 4 agentes desarrollados, 2 de ellos implementados<br>
-          Resultado: Cumplido justo en la meta, pero se puede mejorar la tasa de implementación</p>
-          <span class="cd-timeline__date">Marzo - Noviembre</span>
-        </div>
-      </div>
       
-      <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--location">
-          <img src="assets/img/cd-icon-location.svg" alt="Automatización">
+    </section>
+
+    <section id="about">
+      <div class="container about-section">
+        <h2>Otros logros</h2>
+        <p>
+          Además de estos logros, se ha colaborado en la ejecución de Workshops de Microsoft Sentinel y en la elaboración de PoCs (Pruebas de Concepto) con Copilot for Security. Estas iniciativas han sido implementadas con éxito en al menos cinco empresas clave: NMP, Urrea, Chedraui, Bepensa y KOF.
+
+          Como iniciativa personal, y con miras a su futura implementación en Onesec, se ha desarrollado un modelo de Machine Learning enfocado en la predicción de malware. Puede consultar su presentación en el siguiente enlace:
+        <div style="text-align: center;">
+          <a href="https://drive.google.com/file/d/1-Rt_OZ1os1TnX620bDMxQUububgWdeQx/view?usp=sharing" class="button more-btn">Ver</a>
         </div>
-        <div class="cd-timeline__content text-component">
-          <h2>Automatizaciones en Power Automate y Logic Apps</h2>
-          <p class="color-contrast-medium">Meta: 1 cada 2 meses (5 en 11 meses)<br>
-          Logro: 5 flujos finalizados<br>
-          Resultado: Cumplido</p>
-          <span class="cd-timeline__date">Febrero - Octubre</span>
+        
+      </div>
+    </section>
+    <footer>
+      <div class="container footer-section">
+        <ul class="footer-links">
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#features">Proyectos</a></li>
+          <li><a href="#about">Logros</a></li>
+        </ul>
+        <div class="footer-logo">
+          <span>ONESEC</span>
         </div>
       </div>
-      
-      <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--picture">
-          <img src="assets/img/cd-icon-picture.svg" alt="ML">
-        </div>
-        <div class="cd-timeline__content text-component">
-          <h2>Modelos de Machine Learning Evaluados e Implementados</h2>
-          <p class="color-contrast-medium">Meta: 1 cada 6 meses<br>
-          Logro: 1 modelo de predicción de malware finalizado y en espera de implementación<br>
-          Resultado: Cumplido, falta implementación en Databricks</p>
-          <span class="cd-timeline__date">Junio - Diciembre</span>
-        </div>
-      </div>
-      
-      <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--movie">
-          <img src="assets/img/cd-icon-movie.svg" alt="Workshops">
-        </div>
-        <div class="cd-timeline__content text-component">
-          <h2>Workshops y Demostraciones de Sentinel y Copilot For Security</h2>
-          <p class="color-contrast-medium">Meta: 1 cada 2 meses (5 en 11 meses)<br>
-          Logro: 5 workshops en NMP, Urrea, Chedraui, Bepensa<br>
-          Resultado: Superado</p>
-          <span class="cd-timeline__date">Enero - Noviembre</span>
-        </div>
-      </div>
-      
-      <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--location">
-          <img src="assets/img/cd-icon-location.svg" alt="Documentación">
-        </div>
-        <div class="cd-timeline__content text-component">
-          <h2>Documentaciones Técnicas</h2>
-          <p class="color-contrast-medium">Meta: 1 cada 2 meses<br>
-          Logro: 16 documentaciones de playbooks completadas (faltan las de agentes de Copilot)<br>
-          Resultado: Superado ampliamente</p>
-          <span class="cd-timeline__date">Febrero - Noviembre</span>
-        </div>
-      </div>
-      
-      <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--movie">
-          <img src="assets/img/cd-icon-movie.svg" alt="Evaluación">
-        </div>
-        <div class="cd-timeline__content text-component">
-          <h2>Evaluación General</h2>
-          <p class="color-contrast-medium">KPI Superados: Playbooks, Promptbooks, Workshops, Automatizaciones, Plugins en Copilot, Documentación Técnica<br>
-          KPI Cumplidos: Agentes en Copilot, Modelos de IA, Eficiencia en Implementaciones<br>
-          KPI a Mejorar: Acelerar la implementación de agentes de Copilot y formalizar el onboarding</p>
-          <span class="cd-timeline__date">Análisis Final</span>
-        </div>
-      </div>
-    </div>
-  </section>
-  <script src="assets/js/main.js"></script>
-</body>
+    </footer>
+    <!-- main js -->
+    <script src="script.js"></script>
+    <script>
+      // footer copyright
+      let output = `<span class='copy-write'>&copy; ${new Date().getFullYear()}</span>`;
+      document.querySelector("footer .container").innerHTML += output;
+    </script>
+    <script src="./observer.js"></script>
+  </body>
 </html>
